@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Formulário de Cadastro de Aluno</h2>
+    <form action="#" method="post">
+        <label>Nome</label>
+        <input type="text" id="inp_nome" >
+        <br>
+        
+        <label>Data Nascimento</label>
+        <input type="date" id="inp_data">
+        <br>
+
+        <label>Email</label>
+        <input type="email" id="inp_email">
+        <br>
+
+        <label>CPF</label>
+        <input type="number" id="inp_cpf">
+        <br>
+
+        <label>Genero</label>
+        <input type="radio" name="genero" id="rb_masc" value="Masculino">Masculino 
+        <input type="radio" name="genero" id="rb_fem" value="Feminino">Feminino 
+        <input type="radio" name="genero" id="rb_out" value="Outro">Outro 
+        <br>
+        <label>Linguagens Favoritas</label>
+        <select id="sel_ling" >
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+        </select> 
+        <br>
+        <label>Aceito os Termos e Condições</label>
+        <input type="checkbox" id="ckb_termo" required>
+        <br>
+        <label>Observação</label> <br>
+        <textarea id="txt_obs" rows="10" cols="50" maxlength="10" minlength="5"></textarea>
+        <br>
+        <input type="submit" value="Enviar" >
+        <br>
+        <input type="text" value="03/09/2024" readonly>
+
+    </form>
+</body>
+</html>
