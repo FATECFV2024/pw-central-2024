@@ -89,3 +89,179 @@ div>p{
 .none-element{
     display: none;
 }
+
+/* Positions */
+.static-box{
+    position:static;
+    background-color: aquamarine;
+    width: 300px;
+    height: 150px;
+    border: 1px solid;
+    top:150px;
+}
+
+.relative-box{
+    position:relative;
+    background-color: #7300ff;
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    top:10px;
+    left: 150px;
+}
+
+.fixed-box{
+    position: fixed;
+    background-color: brown;
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    top: 200px;
+    left: 100px;
+}
+
+.parent{
+    position: relative;
+    height: 200px;
+}
+
+.absolute-box{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    top:10px;
+    background-color: brown;
+}
+
+.absolute-box1{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    border: 1px solid;
+    top:200px;
+    background-color: brown;
+}
+
+.f-h-start{
+    display: flex;
+    justify-content: start;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+
+.f-h-end{
+    display: flex;
+    justify-content: end;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+
+.f-h-center{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-h-arround{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-h-between{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+span{
+    background-color: white;
+    font-size: 18px;
+ 
+    width: 90px;
+    border-radius: 10px;
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+.f-v-start{
+    display: flex;
+    align-items: start;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-v-end{
+    display: flex;
+    align-items: end;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-v-center{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-v-strech{
+    display: flex;
+    align-items: stretch;
+    height: 200px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-h-start-col{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    height: 200px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-h-end-col{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 200px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
+
+.f-h-center-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 25vw;
+    background-color: aquamarine;
+    margin-top: 10px;
+}
