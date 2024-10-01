@@ -1,0 +1,115 @@
+@media only screen and (max-width:600px) {
+    body{
+        font-size:10px;
+        background-color: brown;
+        color: white;
+    }
+ }
+
+ /* @media only screen and (min-width:601px) {
+    body{
+        font-size:30px;
+        background-color: rgb(29, 164, 72);
+        color: white;
+    }
+ } */
+
+
+ @media only screen and (min-width:1025px){
+    body{
+        font-size:32px;
+        background-color: rgb(255, 255, 255);
+        color: white;
+    }
+ }
+
+ @media only screen and (min-width:601px) and (max-width:1024px){
+    body{
+        font-size:18px;
+        background-color: coral;
+        color: white;
+    }
+ }
+
+ @media print {
+    body{
+        background-color:dimgray
+    }
+ }
+/* Utilizando GRID */
+
+ .item{
+    background-color: blueviolet;
+    font-size:20px;
+    margin: 2px 2px 2px 2px ;
+    border-radius: 2px;
+    
+ }
+
+ .container{
+    justify-content: center;
+    display: grid;
+    border: 5px solid;
+ }
+
+ .container_col{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns: 50% 50%;
+ }
+
+ .container_col_fix{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns: 200px 200px;
+ }
+
+
+ .container_col_din{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns: 200px 1fr;
+ }
+
+
+ .container_col_row{
+    margin-top: 5px;
+    display: grid;
+    border: 5px solid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows:  300px 200px;
+
+ }
+
+
+ .header{
+    grid-area: header;
+    background-color: beige;
+ }
+
+ .sidenav{
+    grid-area: sidenav;
+    background-color: brown;
+ }
+
+ .main {
+    grid-area: main;
+ }
+
+ .footer{
+    grid-area: footer;
+    background-color: coral;
+ }
+
+ .container_area{
+    display: grid ;
+    margin-top: 2%;
+    grid-template-areas: "header header " "sidenav main" "footer footer ";
+    
+    grid-template-rows: 100px 100px 100px;
+    width: 100%;
+
+ }
