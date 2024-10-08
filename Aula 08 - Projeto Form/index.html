@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula de Alunos dp ADS</title>
+    <style>
+        @import url('css/styles.css');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Matricula dos Alunos</h1>
+        <form id="matriculaForm">
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" id="txt_nome" required>
+            </div>
+            <div class="form-group">
+                <label>Data Nascimento</label>
+                <input type="date" id="txt_nascimento" required>
+            </div>
+            <div class="form-group">
+                <label>Genero</label>
+                <select id="sel_genero" required>
+                    <option value="" disabled selected>Selecione um genero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="indefinido">Prefiro não dizer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Curso</label>
+                <select id="sel_curso" required>
+                    <option value="" disabled selected>Selecione um curso</option>
+                    <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="gpi">Gestão de Produção Industrial</option>
+                    <option value="ge">Gestão de Processos</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="txt_email" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
