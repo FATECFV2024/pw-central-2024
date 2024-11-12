@@ -48,6 +48,47 @@ div.appendChild(novoParagrafo)
 
 //removendo um elemento
 
+// exemplo para MouseOver e MouseOut
+let meuDIV = document.getElementById('meuDIV')
+
+meuDIV.addEventListener('mouseover',()=>{
+    meuDIV.style.backgroundColor = 'blue'
+})
+
+meuDIV.addEventListener('mouseout', ()=>{
+    meuDIV.style.backgroundColor = 'brown'
+})
+
+let entrada = document.getElementById('entrada')
+
+//exemplo keyup: quando a tecla é liberada
+entrada.addEventListener('keyup', (e)=>{
+    console.log('Tecla liberada: '+e.key)
+})
+
+//exemplo keydown: quando a tecla é pressionada
+entrada.addEventListener('keydown', (e)=>{
+    alert('Tecla pressionada: '+e.key)
+})
+
+//exemplo change: quando o valor do input é alterado
+
+let entrada2 = document.getElementById('entrada2')
+
+entrada2.addEventListener('change', (e)=>{
+    alert('Valor alterado: '+e.target.value)
+})
+
+
+//exemplo submit: quando o formulário é submetido
+let meuForm = document.getElementById('meuForm')
+
+meuForm.addEventListener('submit', (e)=>{
+    e.preventDefault()
+    let ent_nome = document.getElementById('ent_nome')
+    alert('O nome é: '+ ent_nome.value)
+    alert('Formulário submetido')
+})
 
 
 
