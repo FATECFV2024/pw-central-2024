@@ -11,6 +11,8 @@
         public function criar($nome, $genero){
             $aluno = new Aluno($nome,$genero);
             $this->dao->save($aluno);
+
+            return ['success'=>'Aluno criado com sucesso'];
         }
 
     }
